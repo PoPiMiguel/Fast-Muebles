@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Formulario de Inicio de Sesión</title>
+	<link rel="stylesheet" href="estilosform.css">
+</head>
+<body>
+	<div class="form-container">
+		<h1>Formulario de Inicio de Sesión</h1>
+		<form>
+			<div class="row">
+				<div class="column">
+					<label for="Nombre">Nombre</label>
+					<input type="text" id="Nombre" name="Nombre" required>
+				</div>
+				<div class="column">
+					<label for="Apellidos">Apellidos</label>
+					<input type="text" id="Apellidos" name="Apellidos" required>
+				</div>
+				<div class="column-full">
+					<label for="Email">Email</label>
+					<input type="email" id="Email" name="Email" required>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="column">
+					<label for="Móvil">Móvil</label>
+					<input type="number" id="Móvil" name="Móvil" required>
+				</div>
+				<div class="column">
+					<label for="Teléfono">Teléfono</label>
+					<input type="number" id="Teléfono" name="Teléfono">
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="column-full">
+					<label for="Dirección">Dirección</label>
+					<input type="text" id="Dirección" name="Dirección" required>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="column">
+					<label for="Código Postal">Código Postal</label>
+					<input type="number" id="Código Postal" name="Código Postal" required>
+				</div>
+				<div class="column">
+					<label for="Ciudad">Ciudad</label>
+					<input type="text" id="Ciudad" name="Ciudad" required>
+				</div>
+				<div class="column">
+					<label for="Provincia">Provincia</label>
+					<input type="text" id="Provincia" name="Provincia" required>
+				</div>
+			</div>
+
+			<h1>Datos Personales</h1>
+
+			<div class="row">
+				<div class="column">
+					<label for="FechaNacimiento">Fecha de Nacimiento</label>
+					<input type="date" id="FechaNacimiento" name="FechaNacimiento" required>
+				</div>
+				<div class="column">
+					<label for="Sexo">Sexo</label>
+					<select id="Sexo" name="Sexo" required>
+						<option value="" disabled selected>Seleccione uno</option>
+						<option value="Hombre">Hombre</option>
+						<option value="Mujer">Mujer</option>
+					</select>
+				</div>
+				<div class="column">
+					<label for="DNI">DNI</label>
+					<input type="text" id="DNI" name="DNI" required>
+				</div>
+			</div>
+			<table>
+				<tr>
+					<td>
+						<input type="submit" value="Enviar">
+					</td>
+					<td>
+						<input type="reset" value="Reset">
+					</td>
+					<td>
+						<button onclick="window.close()">Cerrar ventana</button> 
+					</td>
+				</tr>
+			</table>
+		</form>
+	</div>
+</body>
+</html>
