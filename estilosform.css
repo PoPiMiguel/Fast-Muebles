@@ -1,0 +1,118 @@
+/* General Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Form Container */
+.form-container {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 700px;
+    padding: 2em;
+    text-align: center;
+}
+
+h1 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 1em;
+    border-bottom: 2px solid #4a90e2;
+    padding-bottom: 0.5em;
+    text-align: left;
+}
+
+/* Input and Label Styles */
+label {
+    display: block;
+    font-weight: bold;
+    margin: 10px 0 5px;
+    color: #555;
+    text-align: left;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="date"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    font-size: 1em;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+input[type="submit"]:hover {
+    background-color: #357ABD;
+}
+input[type="reset"]{
+    width: 100%;
+    padding: 12px;
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+input[type="reset"]:hover {
+    background-color: #357ABD;
+}
+button{
+    width: 100%;
+    padding: 12px;
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+button:hover{
+    background-color: #357ABD;
+}
+
+/* Responsive Adjustments */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.column {
+    flex: 1 1 45%;
+    margin-bottom: 15px;
+}
+
+.column-full {
+    flex: 1 1 100%;
+    margin-bottom: 15px;
+}
+
+@media (max-width: 600px) {
+    .column, .column-full {
+        flex: 1 1 100%;
+    }
+}
